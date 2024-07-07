@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="ex.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">YumYard</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="pro.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Menu Section -->
+    <section id="menu" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Our Menu</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/pizza.jpg" class="card-img-top" alt="Pizza">
+                        <div class="card-body">
+                            <h5 class="card-title">Pizza</h5>
+                            <p class="card-text">₹310</p>
+                            <button class="btn btn-primary add-to-cart" data-name="Pizza" data-price="310">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/burger1.jpg" class="card-img-top" alt="Burger & Fries">
+                        <div class="card-body">
+                            <h5 class="card-title">Burger & Fries</h5>
+                            <p class="card-text">₹250</p>
+                            <button class="btn btn-primary add-to-cart" data-name="Burger & Fries" data-price="250">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/pasta.jpeg" class="card-img-top" alt="Pasta">
+                        <div class="card-body">
+                            <h5 class="card-title">Pasta</h5>
+                            <p class="card-text">₹110</p>
+                            <button class="btn btn-primary add-to-cart" data-name="Pasta" data-price="110">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/biryani.jpg" class="card-img-top" alt="Chicken Biryani">
+                        <div class="card-body">
+                            <h5 class="card-title">Chicken Biryani</h5>
+                            <p class="card-text">₹180/240</p>
+                            <button class="btn btn-primary add-to-cart" data-name="Chicken Biryani" data-price="180">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/mbiryani2.jpg" class="card-img-top" alt="Mutton Biryani">
+                        <div class="card-body">
+                            <h5 class="card-title">Mutton Biryani</h5>
+                            <p class="card-text">₹220/420</p>
+                            <button class="btn btn-primary add-to-cart" data-name="Mutton Biryani" data-price="220">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="/images/bn.jpg" class="card-img-top" alt="Butter Naan">
+                        <div class="card-body">
+                            <h5 class="card-title">Butter Naan</h5>
+                            <p class="card-text">1 - ₹15</p>
+                            <button class="btn btn-primary add-to-cart" data-name="Butter Naan" data-price="15">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="/images/cc.jpg" class="card-img-top" alt="Chicken Curry">
+                        <div class="card-body">
+                            <h5 class="card-title">Chicken Curry</h5>
+                            <p class="card-text">₹170</p>
+                            <button class="btn btn-primary add-to-cart" data-name="Chicken Curry" data-price="170">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="/images/pbm.jpg" class="card-img-top" alt="Paneer Butter Masala">
+                        <div class="card-body">
+                            <h5 class="card-title">Paneer Butter Masala</h5>
+                            <p class="card-text">₹140.00</p>
+                            <button class="btn btn-primary add-to-cart" data-name="Paneer Butter Masala" data-price="140">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="cart" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Shopping Cart</h2>
+            <div id="cart-items" class="row">
+                <!-- Cart items will be added here dynamically -->
+            </div>
+            <div class="text-center">
+                <h4>Total: ₹<span id="cart-total">0.00</span></h4>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 YumYard. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
